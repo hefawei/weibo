@@ -1,7 +1,6 @@
 @extends('layouts.default')
-@section('title', '帮助')
+@section('title', '注册')
 
 @section('content')
-  <h3>帮助</h3>
+  <h2>注册</h2>
 @stop
-
