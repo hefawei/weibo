@@ -26,3 +26,8 @@ Route::get('signup', 'UsersController@create')->name('signup');
 
 //User 资源路由 遵循Restful设计
 Route::resource('users', 'UsersController');
+
+//登录处理
+Route::get('login', 'SessionsController@create')->name('login');
+Route::post('login', 'SessionsController@store')->name('login');
+Route::delete('logout', 'SessionsController@destroy')->name('logout');
